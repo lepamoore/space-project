@@ -28,7 +28,7 @@
   }
 
   @mixin toRem($property, $value) {
-    #{$property}: ($value / 16) + rem;
+    #{$property}: math.div($value, 16) + rem;
 }
 
 //  COLORS
@@ -44,17 +44,16 @@ $barlow: 'Barlow Condensed', sans-serif;
 
 @mixin bellefairFont {
     font-family: $bellefair;
-    color: $white;
 }
 
 @mixin barlowFont {
     font-family: $barlow;
-    color: $white;
 }
 
+// mixin size fixed
 @mixin headingOne {
     @include bellefairFont;
-    @include toRem(font-size, 150);
+    @include toRem(font-size, 80);
 }
 
 @mixin headingTwo {
@@ -67,14 +66,16 @@ $barlow: 'Barlow Condensed', sans-serif;
     @include toRem(font-size, 56);
 }
 
+// mixin size ficed
 @mixin headingFour {
     @include bellefairFont;
-    @include toRem(font-size, 32);
+    @include toRem(font-size, 20);
 }
 
+// mixin size fixed
 @mixin headingFive {
     @include barlowFont;
-    @include toRem(font-size, 28);
+    @include toRem(font-size, 16);
     @include toRem(letter-spacing, 4.75);
 }
 
@@ -95,8 +96,9 @@ $barlow: 'Barlow Condensed', sans-serif;
     @include toRem(letter-spacing, 2.7);
 }
 
+// mixin size fixed
 @mixin bodyText {
     line-height: 2rem;
     @include barlowFont;
-    @include toRem(font-size, 18);
+    @include toRem(font-size, 15);
 }

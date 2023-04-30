@@ -1,0 +1,64 @@
+@import "./var.scss";
+
+#wrapper00 {
+    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center
+    }
+}
+
+#detailsContainer00 {
+    height: 47.5%;
+}
+
+.headingOne {
+    @include headingOne;
+    color: $white; 
+    text-transform: uppercase;
+    width: 100%
+}
+
+.headingFive {
+    @include headingFive;
+    color: $grey;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.bodyText {
+    @include bodyText;
+    color: $grey;
+    width: 100%;
+    padding: 0 1.5rem;
+}
+
+#whiteBallContainer00 {
+    height: 37.5%;
+}
+
+#whiteBall00 {
+    background-color: $white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    transition: all .5s;
+
+    &:hover {
+        box-shadow: 0 0 0 50px rgba($white, $alpha: .25);
+    }
+}
+
+.headingFour {
+    @include headingFour;
+    color: $black;
+    text-transform: uppercase;
+}
