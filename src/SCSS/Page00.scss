@@ -1,7 +1,7 @@
 @import "./var.scss";
 
 #wrapper00 {
-    background-image: url(../assets/home/background-home-mobile.jpg);
+    background-image: url(../assets/home/background-home-mobile.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,25 +20,40 @@
     height: 47.5%;
 }
 
-.headingOne {
-    @include headingOne;
+#heading00 {
     color: $white; 
     text-transform: uppercase;
-    width: 100%
+    width: 100%;
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    @include toRem(font-size, 80);
+    line-height: 125%;
 }
 
-.headingFive {
-    @include headingFive;
+#headSpan00 {
     color: $grey;
     width: 100%;
     text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    @include toRem(line-height, 19);
+    text-align: center;
+    @include toRem(letter-spacing, 2.7);
 }
 
-.bodyText {
-    @include bodyText;
+#bodyText00 {
     color: $grey;
     width: 100%;
     padding: 0 1.5rem;
+    font-weight: 400;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    @include toRem(font-size, 15);
+    line-height: 167%;
 }
 
 #whiteBallContainer00 {
@@ -57,8 +72,7 @@
     }
 }
 
-.headingFour {
-    @include headingFour;
+#whiteBallText00 {
     color: $black;
     text-transform: uppercase;
 }

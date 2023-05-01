@@ -37,13 +37,15 @@ header {
     }
 
     #navList {
-        clear: right;
-        list-style-type: none;
-        @include barlowFont;
-        font-size: 1rem;
+        font-family: 'Barlow Condensed';
+        font-style: normal;
         font-weight: 400;
-        letter-spacing: 0.1687rem;
-        margin-top: 7rem;
+        font-size: 1rem;
+        line-height: 19px;
+        @include toRem(line-height, 19);
+        @include toRem(letter-spacing, 2.7);
+        list-style-type: none;
+        margin-top: 7.5rem;
 
         li {
             margin: 2.5rem;
