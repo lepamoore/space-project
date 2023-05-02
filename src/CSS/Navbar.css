@@ -43,7 +43,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 15%;
+  height: 90px;
   position: relative;
   z-index: 999;
 }

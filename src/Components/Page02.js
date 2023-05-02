@@ -36,7 +36,7 @@ export default function Page02(props) {
 
 	return (
 		<div id="wrapper02">
-			<Navbar currentPage={props.currentPage} setPage={props.setPage} />
+			<Navbar currentPage={props.currentPage} setPage={props.setPage} id="navbar02"/>
 			<div className="detailsContainer02" id="imgDetails02">
 				<span id="spanHeading02">
 					<span id="spanHeadingNumber02">02</span>Meet your crew
@@ -51,12 +51,14 @@ export default function Page02(props) {
                 <div className={`divDots02 ${addActiveClass02(3)}`} onClick={() => props.setCrewMember(3)}></div>
             </div>
 			<div className="detailsContainer02" id="textDetails02">
-                <span id="crewPosition02">
-                {props.data.crew[props.crewMember].role}
-                </span>
-                <span id="crewName02">
-                {props.data.crew[props.crewMember].name}
-                </span>
+                <div>
+                    <span id="crewPosition02">
+                    {props.data.crew[props.crewMember].role}
+                    </span>
+                    <span id="crewName02">
+                    {props.data.crew[props.crewMember].name}
+                    </span>
+                </div>
                 <p id="crewDescription02">
                     {props.data.crew[props.crewMember].bio}
                 </p>

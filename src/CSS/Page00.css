@@ -44,6 +44,10 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 4.5fr 4fr;
+  grid-template-areas: "navbar00" "detailsContainer00" "whiteBallContainer00";
 }
 #wrapper00 div {
   display: flex;
@@ -54,7 +58,7 @@
 }
 
 #detailsContainer00 {
-  height: 47.5%;
+  grid-area: detailsContainer00;
 }
 
 #heading00 {
@@ -94,7 +98,7 @@
 }
 
 #whiteBallContainer00 {
-  height: 37.5%;
+  grid-area: whiteBallContainer00;
 }
 
 #whiteBall00 {
@@ -111,4 +115,8 @@
 #whiteBallText00 {
   color: #0b0d17;
   text-transform: uppercase;
+}
+
+#navbar00 {
+  grid-area: navbar00;
 }/*# sourceMappingURL=Page00.css.map */

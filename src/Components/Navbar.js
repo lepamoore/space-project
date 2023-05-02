@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import { useWindowDimensions } from "./Mediaquery";
 import "../CSS/Navbar.css";
 
 function Navbar(props) {
-	const { height, width } = useWindowDimensions();
+	const { width } = useWindowDimensions();
+
+	useEffect(() => {
+		let nav = document.getElementById("nav");
+		if(width > 766.5) {
+			nav.style.right = "-254px";
+		}
+	}, [width]);
 
 	const toggleMenu = () => {
 		if (width < 767) {
@@ -14,7 +21,6 @@ function Navbar(props) {
 			getRight == "0px"
 				? (nav.style.right = "-254px")
 				: (nav.style.right = "0");
-			console.log(getRight);
 		}
 	};
 

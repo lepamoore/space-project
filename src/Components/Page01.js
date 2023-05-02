@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {useState} from "react";
 import "../CSS/Page01.css";
 import Navbar from "./Navbar";
 import moonImg from "../assets/destination/image-moon.webp";
@@ -31,7 +31,7 @@ export default function Page01(props) {
  	return (
 		<div id="wrapper01">
 			<div id="dvh100Container">
-				<Navbar currentPage={props.currentPage} setPage={props.setPage} />
+				<Navbar currentPage={props.currentPage} setPage={props.setPage} id="navbar01"/>
 				<div className="detailsContainer01" id="imgDetails01">
 					<span id="spanHeading01">
 						<span id="spanHeadingNumber01">01</span>Pick your destination

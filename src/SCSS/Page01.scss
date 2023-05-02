@@ -5,6 +5,13 @@
 #dvh100Container {
     height: 100svh;
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90px 1fr 1fr;
+    grid-template-areas: 
+    "navbar01"
+    "imgDetails01"
+    "textDetails01";
 }
 
 .detailsContainer01 {
@@ -134,9 +141,13 @@
 }
 
 #imgDetails01 {
-    height: 40%;
+    grid-area: imgDetails01;
 }
 
 #textDetails01 {
-    height: 45%;
+    grid-area: textDetails01;
+}
+
+#navbar01 {
+    grid-area: navbar01;
 }

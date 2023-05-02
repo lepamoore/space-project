@@ -3,12 +3,14 @@ import React, { useState, useEffect } from "react";
 import Page00 from "./Page00";
 import Page01 from "./Page01";
 import Page02 from "./Page02";
+import Page03 from "./Page03";
 
 function App() {
-	const [page, setPage] = useState(2);
+	const [page, setPage] = useState(3);
 	const [destinationCount, setDestinationCount] = useState(0);
 	const [data, setData] = useState(null);
 	const [crewMember, setCrewMember] = useState(0);
+	const [technologyCount, setTechnologyCount] = useState(0);
 
 	useEffect(() => {
 		getData();
@@ -55,6 +57,15 @@ function App() {
 						setCrewMember={setCrewMember}
 					/>
 				);
+
+			case 3:
+				return <Page03 
+							currentPage={page}
+							setPage={setPage}
+							data={data}
+							technologyCount={technologyCount}
+							setTechnologyCount={setTechnologyCount}
+						/>;
 
 			default:
 				break;

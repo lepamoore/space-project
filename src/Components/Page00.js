@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 export default function Page00(props) {
 	return (
 		<div id="wrapper00">
-			<Navbar currentPage={props.currentPage} setPage={props.setPage} />
+			<Navbar currentPage={props.currentPage} setPage={props.setPage} id="navbar00"/>
 			<div id="detailsContainer00">
 				<span id="headSpan00">So, you want to travel to</span>
 				<h1 id="heading00">Space</h1>

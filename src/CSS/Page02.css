@@ -45,6 +45,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px 5fr 1fr 5fr;
+  grid-template-areas: "navbar02" "imgDetails02" "dotList02" "textDetails02";
 }
 
 .detailsContainer02 {
@@ -84,7 +88,7 @@
 
 #imgDetails02 {
   position: relative;
-  height: 35%;
+  grid-area: imgDetails02;
 }
 
 #crewImg {
@@ -120,6 +124,9 @@
   color: #fff;
   mix-blend-mode: normal;
   opacity: 0.5;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 #crewName02 {
@@ -146,15 +153,19 @@
 }
 
 #dotList02 {
-  height: 10%;
   display: flex;
   align-items: center;
+  grid-area: dotList02;
 }
 
 #textDetails02 {
-  height: 40%;
+  grid-area: textDetails02;
 }
 
 .activeDot {
   opacity: 1;
+}
+
+#navbar02 {
+  grid-area: navbar02;
 }/*# sourceMappingURL=Page02.css.map */
