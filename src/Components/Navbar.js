@@ -7,7 +7,7 @@ function Navbar(props) {
 
 	useEffect(() => {
 		let nav = document.getElementById("nav");
-		if(width > 766.5) {
+		if (width > 766.5) {
 			nav.style.right = "-254px";
 		}
 	}, [width]);
@@ -18,7 +18,7 @@ function Navbar(props) {
 			let getRight = window
 				.getComputedStyle(nav, null)
 				.getPropertyValue("right");
-			getRight == "0px"
+			getRight === "0px"
 				? (nav.style.right = "-254px")
 				: (nav.style.right = "0");
 		}
@@ -26,7 +26,11 @@ function Navbar(props) {
 
 	return (
 		<header>
-			<img src={require("../assets/shared/logo.svg").default} id="homeIcon" />
+			<img
+				src={require("../assets/shared/logo.svg").default}
+				alt="logo"
+				id="homeIcon"
+			/>
 			<nav id="nav">
 				<img
 					src={require("../assets/shared/icon-close.svg").default}
@@ -38,28 +42,36 @@ function Navbar(props) {
 					<li
 						className={`navListItems ${props.page === 0 ? "selectedPage" : ""}`}
 						id="navHome"
-						onClick={() => {props.setPage(0)}}
+						onClick={() => {
+							props.setPage(0);
+						}}
 					>
 						<span>00</span>HOME
 					</li>
 					<li
 						className={`navListItems ${props.page === 1 ? "selectedPage" : ""}`}
 						id="navDestination"
-						onClick={() => {props.setPage(1)}}
+						onClick={() => {
+							props.setPage(1);
+						}}
 					>
 						<span>01</span>DESTINATION
 					</li>
 					<li
 						className={`navListItems ${props.page === 2 ? "selectedPage" : ""}`}
 						id="navCrew"
-						onClick={() => {props.setPage(2)}}
+						onClick={() => {
+							props.setPage(2);
+						}}
 					>
 						<span>02</span>CREW
 					</li>
 					<li
 						className={`navListItems ${props.page === 3 ? "selectedPage" : ""}`}
 						id="navTechnology"
-						onClick={() => {props.setPage(3)}}
+						onClick={() => {
+							props.setPage(3);
+						}}
 					>
 						<span>03</span>TECHNOLOGY
 					</li>

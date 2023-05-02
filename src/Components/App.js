@@ -59,13 +59,15 @@ function App() {
 				);
 
 			case 3:
-				return <Page03 
-							currentPage={page}
-							setPage={setPage}
-							data={data}
-							technologyCount={technologyCount}
-							setTechnologyCount={setTechnologyCount}
-						/>;
+				return (
+					<Page03
+						currentPage={page}
+						setPage={setPage}
+						data={data}
+						technologyCount={technologyCount}
+						setTechnologyCount={setTechnologyCount}
+					/>
+				);
 
 			default:
 				break;
