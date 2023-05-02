@@ -1,0 +1,122 @@
+@import "./var.scss" ;
+
+#wrapper02 {
+    height: 100%;
+    color: $white;
+    background-image: url(../assets/crew/background-crew-mobile.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.detailsContainer02 {
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: $grey;
+    span, ul, h2, p, div {
+        width: 100%;
+    }
+}
+
+#spanHeading02 {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    @include toRem(letter-spacing, 2.7);
+    text-transform: uppercase;
+    color: $white;
+}
+
+#spanHeadingNumber02 {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    @include toRem(letter-spacing, 2.7);
+    color: $white;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: relative;
+    left: -1rem;
+}
+
+#imgDetails02 {
+    position: relative;
+    height: 35%;
+}
+
+#crewImg {
+    height: 190px;
+    position: absolute;
+    bottom: 1px;
+}
+
+#hr02 {
+    width: 85%;
+    position: absolute;
+    bottom: 0;
+    border-color: rgba($color: #111, $alpha: .5);
+}
+
+.divDots02 {
+    height: 10px;
+    width: 10px !important;
+    border-radius: 50%;
+    background-color: white;
+    margin: 0 .75rem;
+    opacity: 0.17;
+    transition: all .5s;
+}
+
+#crewPosition02 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+#crewName02 {
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    @include toRem(font-size, 24);
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    margin: .5rem 0 1rem 0;
+}
+
+#crewDescription02 {
+    padding: 0 1.5rem;
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    @include toRem(font-size, 15);
+    line-height: 167%;
+    text-align: center;
+    color: $grey;
+    margin-bottom: 2.5rem;
+}
+
+#dotList02 {
+    height: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#textDetails02 {
+    height: 40%;
+}
+
+.activeDot {
+    opacity: 1;
+}
