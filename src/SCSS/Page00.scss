@@ -120,6 +120,9 @@
     #whiteBall00 {
         height: 242px;
         width: 242px;
+        &:hover {
+            box-shadow: 0 0 0 80px rgba($white, $alpha: .25);
+        }
     }
 
     #whiteBallText00 {

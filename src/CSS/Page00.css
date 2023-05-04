@@ -150,6 +150,9 @@
     height: 242px;
     width: 242px;
   }
+  #whiteBall00:hover {
+    box-shadow: 0 0 0 80px rgba(255, 255, 255, 0.25);
+  }
   #whiteBallText00 {
     letter-spacing: 0.125rem;
     font-size: 2rem;

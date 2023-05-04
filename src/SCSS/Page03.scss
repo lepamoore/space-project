@@ -88,6 +88,7 @@
     color: $grey;
     text-transform: uppercase;
     margin: .5rem 0;
+    display: block;
 }
 
 #heading03 {
@@ -99,7 +100,8 @@
     text-align: center;
     text-transform: uppercase;
     color: $white;
-    margin-bottom: 1rem
+    margin:.75rem 0 1rem 0;
+    display: block;
 }
 
 #bodyText03 {

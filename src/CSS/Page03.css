@@ -122,6 +122,7 @@
   color: #d0d6f9;
   text-transform: uppercase;
   margin: 0.5rem 0;
+  display: block;
 }
 
 #heading03 {
@@ -133,7 +134,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 1rem;
+  margin: 0.75rem 0 1rem 0;
+  display: block;
 }
 
 #bodyText03 {
