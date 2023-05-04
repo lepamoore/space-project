@@ -87,18 +87,22 @@ export default function Page01(props) {
 				</div>
 				<hr id="hr01" />
 			</div>
-			<div className="detailsContainer01">
-				<div className="detailsContainer01 marginTop01">
-					<span className="travelHeadings01">avg. distance</span>
-					<span className="travelDetails01">
-						{props.data.destinations[props.destinationCount].distance}
-					</span>
+			<div className="detailsContainer01" id="dvh20Contianer">
+				<div className="detailsContainer01 marginTop01" id="BottomContainer011">
+					<div>
+						<span className="travelHeadings01">avg. distance</span><br />
+						<span className="travelDetails01">
+							{props.data.destinations[props.destinationCount].distance}
+						</span>
+					</div>
 				</div>
-				<div className="detailsContainer01 margin01">
-					<span className="travelHeadings01">est. travel time</span>
-					<span className="travelDetails01">
-						{props.data.destinations[props.destinationCount].travel}
-					</span>
+				<div className="detailsContainer01 margin01" id="BottomContainer012">
+					<div>
+						<span className="travelHeadings01">est. travel time</span><br />
+						<span className="travelDetails01">
+							{props.data.destinations[props.destinationCount].travel}
+						</span>
+					</div>
 				</div>
 			</div>
 		</div>

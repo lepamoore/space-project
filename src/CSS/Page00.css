@@ -70,6 +70,7 @@
   font-weight: 400;
   font-size: 5rem;
   line-height: 125%;
+  margin: 1rem 0 1.5rem 0;
 }
 
 #headSpan00 {
@@ -92,7 +93,6 @@
   font-weight: 400;
   font-family: "Barlow";
   font-style: normal;
-  font-weight: 400;
   font-size: 0.9375rem;
   line-height: 167%;
 }
@@ -115,8 +115,51 @@
 #whiteBallText00 {
   color: #0b0d17;
   text-transform: uppercase;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  text-align: center;
+  letter-spacing: 0.078125rem;
 }
 
 #navbar00 {
   grid-area: navbar00;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023.5px) {
+  #wrapper00 {
+    background-image: url(../assets/home/background-home-tablet.webp);
+  }
+  #headSpan00 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.2109375rem;
+  }
+  #heading00 {
+    font-size: 9.375rem;
+    line-height: 100%;
+    margin: 2rem 0 2rem 0;
+  }
+  #bodyText00 {
+    padding: 0 10rem;
+    font-size: 1rem;
+    line-height: 175%;
+  }
+  #whiteBall00 {
+    height: 242px;
+    width: 242px;
+  }
+  #whiteBallText00 {
+    letter-spacing: 0.125rem;
+    font-size: 2rem;
+  }
+  #detailsContainer00 {
+    position: relative;
+  }
+  #detailsContainerChild00 {
+    position: relative;
+    top: 25%;
+    transform: translateY(-25%);
+  }
 }/*# sourceMappingURL=Page00.css.map */

@@ -62,7 +62,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 .5rem .5rem 1rem;
+    margin: 0;
     background-color: transparent;
     color: $white;
     font-family: 'Bellefair';
@@ -123,8 +123,65 @@
 
 #dotList03 {
     grid-area: dotList03;
+    gap: 1rem;
 }
 
 #textDetails03 {
     grid-area: textDetails03;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023.5px) {
+    #wrapper03 {
+        background: $black url(../assets/technology/background-technology-tablet.webp) no-repeat center center;
+        grid-template-rows: 90px 4fr 1fr 5fr;
+    }
+    #spanHeading03 {
+        text-align: left;
+        @include toRem(font-size, 20);
+        margin: 3rem 0 2rem 4rem;
+    }
+    #spanHeadingNumber03 {
+        @include toRem(font-size, 20);
+    }
+
+    #heroImg03 {
+        margin: 2rem 0;
+    }
+
+    .dots03 {
+        height: 60px;
+        width: 60px !important;
+        border-radius: 50%;
+    }
+
+    #dotList03 {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #smallHeading03 {
+        font-size: 1rem;
+        @include toRem(letter-spacing, 2.7);
+        display: block;
+        margin-bottom: 2rem
+    }
+
+    #heading03 {
+        @include toRem(font-size, 40);
+        margin-bottom: 2rem;
+        display: block;
+    }
+
+    #bodyText03 {
+        font-size: 1rem;
+        line-height: 175%;
+        padding: 0 10rem;
+    }
+
+    #textDetails03 {
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+
 }

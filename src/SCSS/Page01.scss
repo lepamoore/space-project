@@ -1,6 +1,9 @@
 @import "./var.scss";
 
- 
+ #wrapper01 {
+    background: $black url(../assets/destination/background-destination-mobile.webp) no-repeat center center;
+    background-size: cover;
+ }
 
 #dvh100Container {
     height: 100svh;
@@ -54,6 +57,7 @@
 #planetImg {
     height: 170px;
     width: 170px;
+    margin-top: 2rem;
 }
 
 .planetNameLinks {
@@ -93,7 +97,6 @@
     text-align: center;
     color: $grey;
     padding: 0 1.5rem;
-    margin-bottom: 2rem;
 }
 
 .activePlanetNameLink {
@@ -150,4 +153,81 @@
 
 #navbar01 {
     grid-area: navbar01;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023.5px) {
+    #wrapper01 {
+        height: 100%;
+        background-image: url(../assets/destination/background-destination-tablet.webp);
+    }
+    #spanHeading01 {
+        text-align: left;
+        @include toRem(font-size, 20);
+        margin: 3rem 0 2rem 4rem;
+    }
+    #spanHeadingNumber01 {
+        @include toRem(font-size, 20);
+    }
+
+    #dvh100Container {
+        height: 85%;
+    }
+
+    #planetImg {
+        height: 300px;
+        width: 300px;
+    }
+
+    .planetNameLinks {
+        font-size: 1rem;
+    }
+
+    #heading01 {
+        @include toRem(font-size, 80);
+        margin: 1rem 0 0 0;
+    }
+
+    #bodyText01 {
+        font-size: 1rem;
+        @include toRem(line-height, 28);
+        padding: 0 6rem;
+    }
+
+    #textDetails01 {
+        margin-top: 3rem;
+    }
+
+    #hr01 {
+        width: 80%;
+    }
+
+    #dvh20Contianer {
+        height: 15%;
+    }
+
+    #BottomContainer011 {
+        display: inline-flex;
+        width: 40%;
+        height: 100%;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    #BottomContainer012 {
+        display: inline-flex;
+        width: 40%;
+        height: 100%;
+        margin-top: 0;
+        align-items: center;
+    }
+
+    .travelHeadings01 {
+        position: relative;
+        bottom: 1.5rem;
+    }
+
+    .travelDetails01 {
+        position: relative;
+        bottom: .5rem;
+    }
 }

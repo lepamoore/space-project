@@ -74,13 +74,15 @@ export default function Page03(props) {
 				</div>
 			</div>
 			<div className="detailsContainer03" id="textDetails03">
-				<span id="smallHeading03">The terminology...</span>
-				<span id="heading03">
-					{props.data.technology[props.technologyCount].name}
-				</span>
-				<p id="bodyText03">
-					{props.data.technology[props.technologyCount].description}
-				</p>
+				<div>
+					<span id="smallHeading03">The terminology...</span>
+					<span id="heading03">
+						{props.data.technology[props.technologyCount].name}
+					</span>
+					<p id="bodyText03">
+						{props.data.technology[props.technologyCount].description}
+					</p>
+				</div>
 			</div>
 		</div>
 	);

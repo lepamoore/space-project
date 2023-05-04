@@ -135,3 +135,78 @@
 #navbar02 {
     grid-area: navbar02;
 }
+
+#spanHeading0202 {
+    display: none;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    @include toRem(letter-spacing, 2.7);
+    text-transform: uppercase;
+    color: $white;
+}
+
+#spanHeadingNumber0202 {
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    @include toRem(letter-spacing, 2.7);
+    color: $white;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    position: relative;
+    left: -1rem;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023.5px) {
+    #wrapper02 {
+        background-image: url(../assets/crew/background-crew-tablet.webp);
+        grid-template-rows: 90px 3fr 1fr 5fr;
+        grid-template-areas: 
+        "navbar02"
+        "textDetails02"
+        "dotList02"
+        "imgDetails02";
+    }
+
+    #crewDescription02 {
+        padding: 0 5rem;
+        font-size: 1rem;
+        line-height: 175%;
+        margin: 1.5rem 0 2.5rem 0;
+    }
+
+    #spanHeading0202 {
+        display: block;
+        text-align: left;
+        @include toRem(font-size, 20);
+        margin: 3rem 0 2rem 4rem;
+    }
+
+    #spanHeadingNumber0202 {
+        @include toRem(font-size, 20);
+    }
+
+    #spanHeading02 {
+        display: none;
+    }
+
+    #crewImg {
+        height: 572px;
+        bottom: -25px;
+    }
+
+    #dotList02 {
+        align-items: flex-start;
+    }
+
+    #crewPosition02 {
+        @include toRem(font-size, 24);
+    }
+
+    #crewName02 {
+        @include toRem(font-size, 40);
+    }
+}

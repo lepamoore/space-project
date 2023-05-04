@@ -5,12 +5,13 @@ import "../CSS/Navbar.css";
 function Navbar(props) {
 	const { width } = useWindowDimensions();
 
-	useEffect(() => {
-		let nav = document.getElementById("nav");
-		if (width > 766.5) {
-			nav.style.right = "-254px";
-		}
-	}, [width]);
+	function activeLiClass(stateShouldBe) {
+		if (width > 766.5 && stateShouldBe === props.currentPage) {
+				return "isActiveLi";
+			} else {
+				return "";
+			}
+		};
 
 	const toggleMenu = () => {
 		if (width < 767) {
@@ -40,7 +41,7 @@ function Navbar(props) {
 				/>
 				<ul id="navList">
 					<li
-						className={`navListItems ${props.page === 0 ? "selectedPage" : ""}`}
+						className={`navListItems ${props.page === 0 ? "selectedPage" : ""} ${activeLiClass(0)}`}
 						id="navHome"
 						onClick={() => {
 							props.setPage(0);
@@ -49,7 +50,7 @@ function Navbar(props) {
 						<span>00</span>HOME
 					</li>
 					<li
-						className={`navListItems ${props.page === 1 ? "selectedPage" : ""}`}
+						className={`navListItems ${props.page === 1 ? "selectedPage" : ""} ${activeLiClass(1)}`}
 						id="navDestination"
 						onClick={() => {
 							props.setPage(1);
@@ -58,7 +59,7 @@ function Navbar(props) {
 						<span>01</span>DESTINATION
 					</li>
 					<li
-						className={`navListItems ${props.page === 2 ? "selectedPage" : ""}`}
+						className={`navListItems ${props.page === 2 ? "selectedPage" : ""} ${activeLiClass(2)}`}
 						id="navCrew"
 						onClick={() => {
 							props.setPage(2);
@@ -67,7 +68,7 @@ function Navbar(props) {
 						<span>02</span>CREW
 					</li>
 					<li
-						className={`navListItems ${props.page === 3 ? "selectedPage" : ""}`}
+						className={`navListItems ${props.page === 3 ? "selectedPage" : ""} ${activeLiClass(3)}`}
 						id="navTechnology"
 						onClick={() => {
 							props.setPage(3);

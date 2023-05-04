@@ -71,13 +71,16 @@ export default function Page02(props) {
 				></div>
 			</div>
 			<div className="detailsContainer02" id="textDetails02">
+				<span id="spanHeading0202">
+					<span id="spanHeadingNumber0202">02</span>Meet your crew
+				</span>
 				<div>
 					<span id="crewPosition02">
 						{props.data.crew[props.crewMember].role}
 					</span>
 					<span id="crewName02">{props.data.crew[props.crewMember].name}</span>
-				</div>
-				<p id="crewDescription02">{props.data.crew[props.crewMember].bio}</p>
+					<p id="crewDescription02">{props.data.crew[props.crewMember].bio}</p>
+				</div>	
 			</div>
 		</div>
 	);
