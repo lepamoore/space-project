@@ -52,45 +52,65 @@ export default function Page01(props) {
 					/>
 				</div>
 				<div className="detailsContainer01" id="textDetails01">
-					<ul id="planetNameList">
-						<li
-							className={`planetNameLinks ${addActiveClass(0)}`}
-							onClick={() => props.setDestinationCount(0)}
-						>
-							Moon
-						</li>
-						<li
-							className={`planetNameLinks ${addActiveClass(1)}`}
-							onClick={() => props.setDestinationCount(1)}
-						>
-							Mars
-						</li>
-						<li
-							className={`planetNameLinks ${addActiveClass(2)}`}
-							onClick={() => props.setDestinationCount(2)}
-						>
-							Europa
-						</li>
-						<li
-							className={`planetNameLinks ${addActiveClass(3)}`}
-							onClick={() => props.setDestinationCount(3)}
-						>
-							Titan
-						</li>
-					</ul>
-					<h2 id="heading01">
-						{props.data.destinations[props.destinationCount].name}
-					</h2>
-					<p id="bodyText01">
-						{props.data.destinations[props.destinationCount].description}
-					</p>
+					<div id="flexcenter">
+						<ul id="planetNameList">
+							<li
+								className={`planetNameLinks ${addActiveClass(0)}`}
+								onClick={() => props.setDestinationCount(0)}
+							>
+								Moon
+							</li>
+							<li
+								className={`planetNameLinks ${addActiveClass(1)}`}
+								onClick={() => props.setDestinationCount(1)}
+							>
+								Mars
+							</li>
+							<li
+								className={`planetNameLinks ${addActiveClass(2)}`}
+								onClick={() => props.setDestinationCount(2)}
+							>
+								Europa
+							</li>
+							<li
+								className={`planetNameLinks ${addActiveClass(3)}`}
+								onClick={() => props.setDestinationCount(3)}
+							>
+								Titan
+							</li>
+						</ul>
+						<h2 id="heading01">
+							{props.data.destinations[props.destinationCount].name}
+						</h2>
+						<p id="bodyText01">
+							{props.data.destinations[props.destinationCount].description}
+						</p>
+						<div className="detailsContainer01" id="dvh201Container">
+						<hr id="hr0101"/>
+								<div className="inlineBlock">
+									<span className="travelHeadings01">avg. distance</span>
+									<br />
+									<span className="travelDetails01">
+										{props.data.destinations[props.destinationCount].distance}
+									</span>
+								</div>
+								<div className="inlineBlock">
+									<span className="travelHeadings01">est. travel time</span>
+									<br />
+									<span className="travelDetails01">
+										{props.data.destinations[props.destinationCount].travel}
+									</span>
+								</div>
+						</div>
+					</div>
 				</div>
 				<hr id="hr01" />
 			</div>
-			<div className="detailsContainer01" id="dvh20Contianer">
+			<div className="detailsContainer01" id="dvh20Container">
 				<div className="detailsContainer01 marginTop01" id="BottomContainer011">
 					<div>
-						<span className="travelHeadings01">avg. distance</span><br />
+						<span className="travelHeadings01">avg. distance</span>
+						<br />
 						<span className="travelDetails01">
 							{props.data.destinations[props.destinationCount].distance}
 						</span>
@@ -98,7 +118,8 @@ export default function Page01(props) {
 				</div>
 				<div className="detailsContainer01 margin01" id="BottomContainer012">
 					<div>
-						<span className="travelHeadings01">est. travel time</span><br />
+						<span className="travelHeadings01">est. travel time</span>
+						<br />
 						<span className="travelDetails01">
 							{props.data.destinations[props.destinationCount].travel}
 						</span>

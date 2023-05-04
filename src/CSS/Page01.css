@@ -229,7 +229,7 @@
   #hr01 {
     width: 80%;
   }
-  #dvh20Contianer {
+  #dvh20Container {
     height: 15%;
   }
   #BottomContainer011 {
@@ -253,5 +253,89 @@
   .travelDetails01 {
     position: relative;
     bottom: 0.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #wrapper01 {
+    overflow-x: hidden;
+    background-image: url(../assets/destination/background-destination-desktop.webp);
+  }
+  #dvh100Container {
+    height: 100svh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 136px 1fr 1fr;
+    grid-template-areas: "navbar01 navbar01" "imgDetails01 textDetails01" "imgDetails01 textDetails01";
+  }
+  #textDetails01 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(12.5%);
+    overflow: hidden;
+  }
+  #spanHeading01, #spanHeadingNumber01 {
+    font-size: 1.75rem;
+    letter-spacing: 0.295rem;
+    transform: translateY(350%);
+  }
+  #planetImg {
+    height: 445px;
+    width: 445px;
+    transform: translateX(20%);
+  }
+  #planetNameList {
+    text-align: left;
+  }
+  #flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .planetNameLinks {
+    font-size: 1rem;
+    text-align: left;
+    margin: 0 1rem;
+  }
+  #heading01 {
+    font-size: 6.25rem;
+    margin: 5rem 0 4rem 1rem;
+    text-align: left;
+  }
+  #bodyText01 {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: left;
+    padding: 0;
+    width: 450px;
+    margin: 0 0 1rem 1rem;
+  }
+  #dvh20Container {
+    display: none;
+  }
+  #dvh201Container {
+    display: block;
+    text-align: left;
+    margin: 2rem 0 0 1rem;
+  }
+  .inlineBlock {
+    display: inline-block;
+    width: 200px !important;
+    margin-right: 2rem;
+  }
+  #hr0101 {
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    width: 450px;
+    margin-bottom: 2rem;
+  }
+  .travelHeadings01 {
+    font-size: 0.875rem;
+    display: block;
+    text-align: left;
+  }
+  .travelDetails01 {
+    font-size: 1.75rem;
   }
 }/*# sourceMappingURL=Page01.css.map */

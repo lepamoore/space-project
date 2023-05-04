@@ -140,3 +140,48 @@
         transform: translateY(-25%);
     }
 }
+
+@media screen and (min-width: 1024px) {
+    #wrapper00 {
+        background-image: url(../assets/home/background-home-desktop.webp);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 4.5fr 4fr;
+        grid-template-areas: 
+          "navbar00 navbar00"
+          "detailsContainer00 whiteBallContainer00"
+          "detailsContainer00 whiteBallContainer00";
+          height: 100%;
+    }
+
+    #headSpan00 {
+        @include toRem(font-size, 28);
+        width: 425px;
+        text-align: left
+    }
+
+    #heading00 {
+        @include toRem(font-size, 150);
+    }
+
+    #bodyText00 {
+        @include toRem(font-size, 18);
+        @include toRem(line-height, 32);
+        padding: 0;
+        text-align: left;
+        width: 425px;
+    }
+
+    #whiteBall00 {
+        height: 274px;
+        width: 274px;
+        transform: translate(20%, 40%);
+    }
+
+    #whiteBallText00 {
+        @include toRem(font-size, 32);
+    }
+
+    #detailsContainerChild00 {
+        transform: translateY(15%);
+    }
+}

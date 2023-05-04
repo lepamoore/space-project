@@ -32,6 +32,7 @@ function Navbar(props) {
 				alt="logo"
 				id="homeIcon"
 			/>
+			<hr id="hr00" />
 			<nav id="nav">
 				<img
 					src={require("../assets/shared/icon-close.svg").default}

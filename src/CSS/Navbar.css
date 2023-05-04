@@ -51,6 +51,10 @@ header img {
   margin: 0 1.5rem;
 }
 
+#hr00 {
+  display: none;
+}
+
 #homeIcon {
   height: 40px;
   width: 40px;
@@ -143,5 +147,64 @@ header img {
   }
   #navList span {
     display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    height: 96px;
+    transform: translateY(40px);
+    width: 100vw;
+    position: fixed;
+  }
+  .isActiveLi {
+    border-color: #fff !important;
+  }
+  #homeIcon {
+    height: 48px;
+    width: 48px;
+    margin-left: 55px;
+  }
+  #burgerToOpen {
+    display: none;
+  }
+  #crossToClose {
+    display: none;
+  }
+  #nav {
+    position: relative;
+    height: 100%;
+    width: 60%;
+    right: 0;
+    -webkit-backdrop-filter: blur(35px);
+            backdrop-filter: blur(35px);
+  }
+  #navList {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 0 2rem;
+    font-size: 0.875rem;
+  }
+  #navList li {
+    margin: 0 1rem;
+    display: inline-block;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid transparent;
+    transition: all 0.5s;
+  }
+  #navList li:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  #hr00 {
+    position: absolute;
+    width: 30%;
+    border-color: rgba(255, 255, 255, 0.1);
+    z-index: 900;
+    left: 12.5%;
+    display: block;
   }
 }/*# sourceMappingURL=Navbar.css.map */
