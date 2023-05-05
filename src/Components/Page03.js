@@ -15,15 +15,15 @@ export default function Page03(props) {
 	function returnImage03() {
 		if (props.technologyCount === 0 && width < 1024) {
 			return landscapeLaunch;
-		} else if (props.technologyCount === 0 && width <= 1024) {
+		} else if (props.technologyCount === 0) {
 			return portraitLaunch;
 		} else if (props.technologyCount === 1 && width < 1024) {
 			return landscapeRocket;
-		} else if (props.technologyCount === 1 && width <= 1024) {
+		} else if (props.technologyCount === 1) {
 			return portraitRocket;
 		} else if (props.technologyCount === 2 && width < 1024) {
 			return landscapeCapsule;
-		} else if (props.technologyCount === 2 && width <= 1024) {
+		} else if (props.technologyCount === 2) {
 			return portraitCapsule;
 		}
 	}

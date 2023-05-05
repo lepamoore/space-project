@@ -231,4 +231,64 @@
   #crewName02 {
     font-size: 2.5rem;
   }
+}
+@media screen and (min-width: 1024px) {
+  #wrapper02 {
+    background-image: url(../assets/crew/background-crew-desktop.webp);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 96px 5fr 1fr 5fr;
+    grid-template-areas: "navbar02 navbar02" "textDetails02 imgDetails02" "textDetails02 imgDetails02" "dotList02 imgDetails02";
+  }
+  #crewImg {
+    height: 600px;
+  }
+  #spanHeading02 {
+    display: none;
+  }
+  #spanHeading0202 {
+    display: block;
+    font-size: 1.75rem;
+    letter-spacing: 0.295rem;
+    width: 500px !important;
+    margin: 0 0 5rem 0;
+  }
+  #spanHeadingNumber0202 {
+    font-size: 1.75rem;
+    letter-spacing: 0.295rem;
+    margin-left: 2.75rem;
+  }
+  #crewPosition02 {
+    font-size: 2rem;
+    text-align: left;
+    width: 500px;
+    margin-left: 7.5rem;
+  }
+  #crewName02 {
+    font-size: 3.5rem;
+    text-align: left;
+    margin: 1rem 0 2rem 7.25rem;
+    display: block;
+  }
+  #crewDescription02 {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    width: 460px;
+    text-align: left;
+    margin-left: 7.5rem;
+    padding: 0;
+  }
+  #textDetails02 {
+    display: block;
+    margin: 6rem 0 0 3rem;
+  }
+  #dotList02 {
+    padding-right: 12rem;
+    gap: 1rem;
+  }
+  .divDots02 {
+    height: 15px;
+    width: 15px !important;
+    border-radius: 50% !important;
+  }
 }/*# sourceMappingURL=Page02.css.map */

@@ -6,7 +6,7 @@ import Page02 from "./Page02";
 import Page03 from "./Page03";
 
 function App() {
-	const [page, setPage] = useState(0);
+	const [page, setPage] = useState(2);
 	const [destinationCount, setDestinationCount] = useState(0);
 	const [data, setData] = useState(null);
 	const [crewMember, setCrewMember] = useState(0);
