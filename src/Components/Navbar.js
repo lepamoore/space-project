@@ -5,6 +5,21 @@ import "../CSS/Navbar.css";
 function Navbar(props) {
 	const { width } = useWindowDimensions();
 
+	useEffect(() => {
+		changeView();
+	}, [props.view]);
+
+	function changeView() {
+		let nav = document.getElementById("nav");
+		if(props.view === 'mobile') {
+			nav.style.right = '-254px';
+			setTimeout(() => nav.style.transition = 'border-color .5s, right .5s', 100);
+		} else {
+			nav.style.transition = 'border-color .5s';
+			nav.style.right = '0';
+		}
+	}
+
 	function activeLiClass(stateShouldBe) {
 		if (width > 766.5 && stateShouldBe === props.currentPage) {
 				return "isActiveLi";

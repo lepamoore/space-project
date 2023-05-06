@@ -71,7 +71,7 @@ header img {
   -webkit-backdrop-filter: blur(35px);
           backdrop-filter: blur(35px);
   background-color: rgba(255, 255, 255, 0.04);
-  transition: all 0.5s;
+  transition: border-color 0.5s;
 }
 
 #crossToClose {
@@ -92,6 +92,7 @@ header img {
 }
 #navList li {
   margin: 2.5rem;
+  cursor: pointer;
 }
 #navList span {
   font-weight: 700;
@@ -140,7 +141,7 @@ header img {
     display: flex;
     align-items: center;
     border-bottom: 3px solid transparent;
-    transition: all 0.5s;
+    transition: border-color 0.5s;
   }
   #navList li:hover {
     border-color: rgba(255, 255, 255, 0.4);
@@ -194,7 +195,7 @@ header img {
     display: flex;
     align-items: center;
     border-bottom: 3px solid transparent;
-    transition: all 0.5s;
+    transition: border-color 0.5s;
   }
   #navList li:hover {
     border-color: rgba(255, 255, 255, 0.4);

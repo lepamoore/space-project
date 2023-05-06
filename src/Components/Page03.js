@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../CSS/Page03.css";
 import Navbar from "./Navbar";
 import landscapeLaunch from "../assets/technology/image-launch-vehicle-landscape.webp";
@@ -10,21 +10,43 @@ import portraitRocket from "../assets/technology/image-spaceport-portrait.webp";
 import { useWindowDimensions } from "./Mediaquery";
 
 export default function Page03(props) {
+	const [img, setImg] = useState(null);
 	const { width } = useWindowDimensions();
 
+	useEffect(() => {
+		setImg(returnImage03());
+	}, [props.technologyCount, props.view])
+
+
 	function returnImage03() {
-		if (props.technologyCount === 0 && width < 1024) {
-			return landscapeLaunch;
-		} else if (props.technologyCount === 0) {
-			return portraitLaunch;
-		} else if (props.technologyCount === 1 && width < 1024) {
-			return landscapeRocket;
-		} else if (props.technologyCount === 1) {
-			return portraitRocket;
-		} else if (props.technologyCount === 2 && width < 1024) {
-			return landscapeCapsule;
-		} else if (props.technologyCount === 2) {
-			return portraitCapsule;
+		if(props.view === 'mobile' || props.view === 'tablet') {
+			switch (props.technologyCount) {
+				case 0:
+					return landscapeLaunch;
+
+				case 1:
+					return landscapeRocket;
+
+				case 2:
+					return landscapeCapsule;
+			
+				default:
+					break;
+			}
+		} else if(props.view === 'desktop') {
+			switch (props.technologyCount) {
+				case 0:
+					return portraitLaunch;
+
+				case 1:
+					return portraitRocket;
+
+				case 2:
+					return portraitCapsule;
+			
+				default:
+					break;
+			}
 		}
 	}
 
@@ -42,13 +64,14 @@ export default function Page03(props) {
 				currentPage={props.currentPage}
 				setPage={props.setPage}
 				id="navbar03"
+				view={props.view}
 			/>
 			<div className="detailsContainer03" id="imgDetails03">
 				<span id="spanHeading03">
 					<span id="spanHeadingNumber03">03</span>Space launch 101
 				</span>
 				<img
-					src={returnImage03()}
+					src={img}
 					alt={`${props.data.technology[props.technologyCount].name}`}
 					id="heroImg03"
 				/>

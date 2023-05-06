@@ -9,6 +9,7 @@ export default function Page00(props) {
 				currentPage={props.currentPage}
 				setPage={props.setPage}
 				id="navbar00"
+				view={props.view}
 			/>
 			<div id="detailsContainer00">
 				<div id="detailsContainerChild00">

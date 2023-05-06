@@ -5,6 +5,8 @@
     background-size: cover;
  }
 
+
+
 #dvh100Container {
     height: 100svh;
     position: relative;
@@ -15,6 +17,10 @@
     "navbar01"
     "imgDetails01"
     "textDetails01";
+}
+
+.inlineBlock {
+    display: none;
 }
 
 .detailsContainer01 {
@@ -73,7 +79,8 @@
     color: $grey;
     text-decoration: 2.5px underline transparent;
     text-underline-offset: 10px;
-    transition: all .5s;
+    transition: text-decoration-color .5s;
+    cursor: pointer;
 }
 
 #heading01 {
@@ -160,6 +167,8 @@
         height: 100%;
         background-image: url(../assets/destination/background-destination-tablet.webp);
     }
+
+
     #spanHeading01 {
         text-align: left;
         @include toRem(font-size, 20);
@@ -173,6 +182,14 @@
         height: 85%;
     }
 
+    #flexcenter {
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
     #planetImg {
         height: 300px;
         width: 300px;
@@ -184,7 +201,7 @@
 
     #heading01 {
         @include toRem(font-size, 80);
-        margin: 1rem 0 0 0;
+        margin: 1rem 0 1.5rem 0;
     }
 
     #bodyText01 {
@@ -237,6 +254,7 @@
         overflow-x: hidden;
         background-image: url(../assets/destination/background-destination-desktop.webp);
     }
+
 
 
     #dvh100Container {

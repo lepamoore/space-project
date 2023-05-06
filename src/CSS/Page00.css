@@ -106,7 +106,7 @@
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  transition: all 0.5s;
+  transition: box-shadow 0.5s;
 }
 #whiteBall00:hover {
   box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.25);
@@ -193,6 +193,9 @@
     height: 274px;
     width: 274px;
     transform: translate(20%, 40%);
+  }
+  #whiteBall00:hover {
+    box-shadow: 0 0 0 100px rgba(255, 255, 255, 0.25);
   }
   #whiteBallText00 {
     font-size: 2rem;

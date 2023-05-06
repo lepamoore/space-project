@@ -95,6 +95,7 @@
   height: 190px;
   position: absolute;
   bottom: 1px;
+  overflow: hidden;
 }
 
 #hr02 {
@@ -111,7 +112,8 @@
   background-color: white;
   margin: 0 0.75rem;
   opacity: 0.17;
-  transition: all 0.5s;
+  transition: opacity 0.5s;
+  cursor: pointer;
 }
 
 #crewPosition02 {
@@ -197,8 +199,11 @@
 @media screen and (min-width: 767px) and (max-width: 1023.5px) {
   #wrapper02 {
     background-image: url(../assets/crew/background-crew-tablet.webp);
-    grid-template-rows: 90px 3fr 1fr 5fr;
+    grid-template-rows: 96px 3fr 1fr 5fr;
     grid-template-areas: "navbar02" "textDetails02" "dotList02" "imgDetails02";
+  }
+  #imgDetails02 {
+    position: relative;
   }
   #crewDescription02 {
     padding: 0 5rem;
@@ -219,8 +224,8 @@
     display: none;
   }
   #crewImg {
-    height: 572px;
-    bottom: -25px;
+    height: 100%;
+    bottom: 0;
   }
   #dotList02 {
     align-items: flex-start;

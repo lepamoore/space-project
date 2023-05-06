@@ -40,6 +40,7 @@ export default function Page02(props) {
 				currentPage={props.currentPage}
 				setPage={props.setPage}
 				id="navbar02"
+				view={props.view}
 			/>
 			<div className="detailsContainer02" id="imgDetails02">
 				<span id="spanHeading02">
