@@ -299,6 +299,7 @@
   #dotList0202 {
     margin-left: 7rem;
     justify-content: flex-start;
+    display: flex;
   }
   .divDots02 {
     height: 15px;
