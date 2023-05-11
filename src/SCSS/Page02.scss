@@ -17,6 +17,10 @@
     "textDetails02";
 }
 
+#dotList0202 {
+    display: none;
+}
+
 .detailsContainer02 {
     text-align: center;
     display: flex;
@@ -284,6 +288,12 @@
     #dotList02 {
         padding-right: 12rem;
         gap: 1rem;
+        display: none;
+    }
+
+    #dotList0202 {
+            margin-left: 7rem;
+            justify-content: flex-start;
     }
 
     .divDots02 {

@@ -81,6 +81,24 @@ export default function Page02(props) {
 					</span>
 					<span id="crewName02">{props.data.crew[props.crewMember].name}</span>
 					<p id="crewDescription02">{props.data.crew[props.crewMember].bio}</p>
+					<div className="detailsContainer02" id="dotList0202">
+				<div
+					className={`divDots02 ${addActiveClass02(0)}`}
+					onClick={() => props.setCrewMember(0)}
+				></div>
+				<div
+					className={`divDots02 ${addActiveClass02(1)}`}
+					onClick={() => props.setCrewMember(1)}
+				></div>
+				<div
+					className={`divDots02 ${addActiveClass02(2)}`}
+					onClick={() => props.setCrewMember(2)}
+				></div>
+				<div
+					className={`divDots02 ${addActiveClass02(3)}`}
+					onClick={() => props.setCrewMember(3)}
+				></div>
+			</div>
 				</div>	
 			</div>
 		</div>

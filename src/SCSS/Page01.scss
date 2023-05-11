@@ -274,14 +274,16 @@
         align-items: center;
         justify-content: center;
         transform: translateX(12.5%);
-        overflow: hidden;
+        overflow: visible;
     }
 
     #spanHeading01, #spanHeadingNumber01 {
         @include toRem(font-size, 28);
         @include toRem(letter-spacing, 4.72);
-        transform: translateY(350%);
+        display: inline;
+        margin: 4rem 0 0 0 ;
     }
+
 
     #planetImg {
         height: 445px;
@@ -291,6 +293,7 @@
 
     #planetNameList {
         text-align: left;
+        margin-top: 1rem;
     }
 
     #flexcenter {
@@ -343,6 +346,10 @@
         margin-bottom: 2rem;
     }
 
+    #hr01 {
+        display: none;
+    }
+
     .travelHeadings01 {
         @include toRem(font-size, 14);
         display: block;
@@ -352,4 +359,5 @@
     .travelDetails01 {
         @include toRem(font-size, 28);
     }
+
 }

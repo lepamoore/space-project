@@ -110,8 +110,7 @@
   line-height: 1.0625rem;
   letter-spacing: 0.14765625rem;
   color: #d0d6f9;
-  -webkit-text-decoration: 2.5px underline transparent;
-          text-decoration: 2.5px underline transparent;
+  text-decoration: 2.5px underline transparent;
   text-underline-offset: 10px;
   transition: text-decoration-color 0.5s;
   cursor: pointer;
@@ -285,12 +284,13 @@
     align-items: center;
     justify-content: center;
     transform: translateX(12.5%);
-    overflow: hidden;
+    overflow: visible;
   }
   #spanHeading01, #spanHeadingNumber01 {
     font-size: 1.75rem;
     letter-spacing: 0.295rem;
-    transform: translateY(350%);
+    display: inline;
+    margin: 4rem 0 0 0;
   }
   #planetImg {
     height: 445px;
@@ -299,6 +299,7 @@
   }
   #planetNameList {
     text-align: left;
+    margin-top: 1rem;
   }
   #flexcenter {
     display: flex;
@@ -341,6 +342,9 @@
     border: 1px solid rgba(255, 255, 255, 0.14);
     width: 450px;
     margin-bottom: 2rem;
+  }
+  #hr01 {
+    display: none;
   }
   .travelHeadings01 {
     font-size: 0.875rem;
