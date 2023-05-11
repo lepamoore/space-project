@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/space-project/static/css/main.f219c502.css",
+    "main.css": "/space-project/static/css/main.883b66d7.css",
     "main.js": "/space-project/static/js/main.59731b1f.js",
     "static/media/image-anousheh-ansari.webp": "/space-project/static/media/image-anousheh-ansari.bb42b775ee0b12430f3a.webp",
     "static/media/image-victor-glover.webp": "/space-project/static/media/image-victor-glover.1c271f99bab8b06d7ab5.webp",
@@ -32,11 +32,11 @@
     "static/media/logo.svg": "/space-project/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
     "static/media/icon-close.svg": "/space-project/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
     "static/media/icon-hamburger.svg": "/space-project/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
-    "main.f219c502.css.map": "/space-project/static/css/main.f219c502.css.map",
+    "main.883b66d7.css.map": "/space-project/static/css/main.883b66d7.css.map",
     "main.59731b1f.js.map": "/space-project/static/js/main.59731b1f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f219c502.css",
+    "static/css/main.883b66d7.css",
     "static/js/main.59731b1f.js"
   ]
 }
