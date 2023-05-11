@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/space-project/static/css/main.f219c502.css",
+    "main.js": "/space-project/static/js/main.59731b1f.js",
+    "static/media/image-anousheh-ansari.webp": "/space-project/static/media/image-anousheh-ansari.bb42b775ee0b12430f3a.webp",
+    "static/media/image-victor-glover.webp": "/space-project/static/media/image-victor-glover.1c271f99bab8b06d7ab5.webp",
+    "static/media/image-douglas-hurley.webp": "/space-project/static/media/image-douglas-hurley.e4c7def427824ef543c0.webp",
+    "static/media/image-mark-shuttleworth.webp": "/space-project/static/media/image-mark-shuttleworth.665e198adc22fcdf7810.webp",
+    "static/media/image-europa.webp": "/space-project/static/media/image-europa.c3be32383f31d0f76d96.webp",
+    "static/media/background-home-desktop.webp": "/space-project/static/media/background-home-desktop.572c7c4fe0b64e9c79d6.webp",
+    "static/media/image-moon.webp": "/space-project/static/media/image-moon.b5a3c90e9c8eeb2cb68d.webp",
+    "static/media/image-spaceport-portrait.webp": "/space-project/static/media/image-spaceport-portrait.639df01327fb45485acc.webp",
+    "static/media/background-destination-desktop.webp": "/space-project/static/media/background-destination-desktop.334bc13af2e730565923.webp",
+    "static/media/image-spaceport-landscape.webp": "/space-project/static/media/image-spaceport-landscape.795f76ae09209e010074.webp",
+    "static/media/background-home-tablet.webp": "/space-project/static/media/background-home-tablet.06378aa32cef4cd7f7f3.webp",
+    "static/media/image-mars.webp": "/space-project/static/media/image-mars.7f55f721b4a64b7a56a8.webp",
+    "static/media/background-destination-tablet.webp": "/space-project/static/media/background-destination-tablet.840a655de410738580c5.webp",
+    "static/media/background-crew-desktop.webp": "/space-project/static/media/background-crew-desktop.a5430eca34f15ff6c00d.webp",
+    "static/media/background-technology-desktop.webp": "/space-project/static/media/background-technology-desktop.97b02ea686e6140301fb.webp",
+    "static/media/image-space-capsule-landscape.webp": "/space-project/static/media/image-space-capsule-landscape.97bc5e05348fb6bca498.webp",
+    "static/media/image-titan.webp": "/space-project/static/media/image-titan.80738bc61e5d1217a19a.webp",
+    "static/media/image-space-capsule-portrait.webp": "/space-project/static/media/image-space-capsule-portrait.d9f4e045b7ee4acade77.webp",
+    "static/media/image-launch-vehicle-portrait.webp": "/space-project/static/media/image-launch-vehicle-portrait.8d092d5a4f1f2d21b22a.webp",
+    "static/media/background-home-mobile.webp": "/space-project/static/media/background-home-mobile.b72360fc89dfca39f4c2.webp",
+    "static/media/background-crew-tablet.webp": "/space-project/static/media/background-crew-tablet.3490e0d579651460caf7.webp",
+    "static/media/image-launch-vehicle-landscape.webp": "/space-project/static/media/image-launch-vehicle-landscape.2f99dd5ded22a86d9240.webp",
+    "static/media/background-technology-tablet.webp": "/space-project/static/media/background-technology-tablet.3c8b47450c0103c87997.webp",
+    "static/media/background-destination-mobile.webp": "/space-project/static/media/background-destination-mobile.b41fb96b49fa7cb1c93f.webp",
+    "static/media/background-crew-mobile.webp": "/space-project/static/media/background-crew-mobile.58d030c679015c6c8244.webp",
+    "static/media/background-technology-mobile.webp": "/space-project/static/media/background-technology-mobile.0b28af591ce8659d2347.webp",
+    "index.html": "/space-project/index.html",
+    "static/media/logo.svg": "/space-project/static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
+    "static/media/icon-close.svg": "/space-project/static/media/icon-close.d47fda63cbd8b3fedbbc1b2a53f64470.svg",
+    "static/media/icon-hamburger.svg": "/space-project/static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
+    "main.f219c502.css.map": "/space-project/static/css/main.f219c502.css.map",
+    "main.59731b1f.js.map": "/space-project/static/js/main.59731b1f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f219c502.css",
+    "static/js/main.59731b1f.js"
+  ]
+}
